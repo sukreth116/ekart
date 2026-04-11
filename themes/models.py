@@ -3,5 +3,5 @@ from django.db import models
 # Create your models here.
 
 class Banner(models.Model):
-    image = models.ImageField(upload_to='media/site/')
+    image = models.ImageField(upload_to='media/') # also can give (upload_to='media/site/')
     banner = models.CharField()
